@@ -1,14 +1,15 @@
 <!-- sticky socia media -->
 <div class="social-media-sidebar">
   <div class="social-media">
-    <a aria-label="facebook" href="#" rel="noopener noreferrer">
+    <a aria-label="facebook" href="https://www.facebook.com/MinisteriodeSaludPublicayAsistenciaSocial/"
+      rel="noopener noreferrer">
       <i class="fa fa-facebook"></i>
     </a>
-    <a aria-label="twitter" href="#" rel="noopener noreferrer">
+    <a aria-label="twitter" href="https://twitter.com/MinSaludGuate/" rel="noopener noreferrer">
       <i class="fa fa-twitter"></i>
     </a>
-    <a aria-label="instagram" href="#" rel="noopener noreferrer">
-      <i class="fa fa-instagram"></i>
+    <a aria-label="youtube" href="https://www.youtube.com/c/MSPASguate" rel="noopener noreferrer">
+      <i class="fa fa-youtube"></i>
     </a>
   </div>
 </div>
@@ -34,24 +35,24 @@
           <div class="social-media">
             <a
               aria-label="facebook"
-              href="#"
+              href="https://www.facebook.com/MinisteriodeSaludPublicayAsistenciaSocial/"
               rel="noopener noreferrer"
             >
               <i class="fa fa-facebook"></i>
             </a>
             <a
               aria-label="twitter"
-              href="#"
+              href="https://twitter.com/MinSaludGuate/"
               rel="noopener noreferrer"
             >
               <i class="fa fa-twitter"></i>
             </a>
             <a
-              aria-label="instagram"
-              href="#"
+              aria-label="youtube"
+              href="https://www.youtube.com/c/MSPASguate"
               rel="noopener noreferrer"
             >
-              <i class="fa fa-instagram"></i>
+              <i class="fa fa-youtube"></i>
             </a>
           </div>
         </div>
@@ -61,6 +62,7 @@
           <ul class="list-unstyled">
             {{ h.build_nav('dataset.search', _('Datasets')) }}
             <!-- Organizaciones -->
+            {{h.build_nav('organization.index', _('Organizations')) }}
             {{h.build_nav('group.index', _('Categories')) }}
             <!-- Documentos -->
             {{ h.build_nav('home.about', _('Help')) }}
@@ -72,7 +74,7 @@
         <div class="col-sm-6 col-md-4 col-lg-3">
           <strong>Enlaces internos</strong>
           <ul class="list-unstyled">
-            <li><a href="/">Políticas de privacidad</a></li>
+            <li><a href="#">Políticas de privacidad</a></li>
             <li><a href="#">Normativas</a></li>
             <li><a href="#">Habilitación en datos.gob</a></li>
             <li><a href="#">Notificar error</a></li>
