@@ -4,6 +4,15 @@ from ckan.lib.plugins import DefaultTranslation
 from ckan import model
 
 
+def get_tags():
+    tags = toolkit.get_action('tag_list')(data_dict={
+        'all_fields': True,
+        'limit': 3,
+        'offset': 0,
+    })
+    return tags
+
+
 def get_groups():
     groups = toolkit.get_action('group_list')(data_dict={'all_fields': True})
     return groups
@@ -64,6 +73,7 @@ class MspasPlugin(plugins.SingletonPlugin, DefaultTranslation):
         # extension they belong to, to avoid clashing with functions from
         # other extensions.
         return {
+            'demo_tags': get_tags,
             'demo_groups': get_groups,
             'demo_latest_packages': get_latest_packages,
             'demo_visualizations': get_visualizations,

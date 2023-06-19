@@ -1,6 +1,6 @@
 <main>
   <div class="main hero">
-    <div class="container">
+    <div class="container promoted">
       {% block promoted %}
         {% snippet 'home/snippets/promoted.html' %}
       {% endblock %}
@@ -9,6 +9,40 @@
       {% block search %}
         {% snippet 'home/snippets/search.html' %}
       {% endblock %}
+    </div>
+    <div class="hero-bar-spacer"></div>
+    <div class="hero-bar">
+      <div class="container">
+        <div class="module-content">
+          <div class="item">
+            <div class="image-container">
+              <img src="/item-1.png" alt="Aguja">
+            </div>
+            <div class="text-container">
+              <h3>Lorem</h3>
+              <p>Prueba de texto</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="/item-2.png" alt="Aguja">
+            </div>
+            <div class="text-container">
+              <h3>Lorem</h3>
+              <p>Prueba de texto</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image-container">
+              <img src="/item-3.png" alt="Aguja">
+            </div>
+            <div class="text-container">
+              <h3>Lorem</h3>
+              <p>Prueba de texto</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div style="display: none">{{ h.demo_groups() }}</div>

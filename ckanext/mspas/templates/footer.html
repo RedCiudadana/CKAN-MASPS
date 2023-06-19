@@ -42,7 +42,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 footer-links">
           {% block footer_nav %}
-          <h2>Secciónes</h2>
+          <strong>Secciónes</strong>
           <ul class="list-unstyled">
             {{ h.build_nav('dataset.search', _('Datasets')) }}
             <!-- Organizaciones -->
@@ -55,7 +55,7 @@
           {% endblock %}
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <h2>Enlaces internos</h2>
+          <strong>Enlaces internos</strong>
           <ul class="list-unstyled">
             <li><a href="/">Políticas de privacidad</a></li>
             <li><a href="#">Normativas</a></li>
@@ -64,7 +64,7 @@
           </ul>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <h2>Ayuda institucional</h2>
+          <strong>Ayuda institucional</strong>
           <ul class="list-unstyled">
             <li><a href="mailto:datosabiertos@mspas.gob.gt">Ingreso de solicitud de ayuda</a></li>
           </ul>
@@ -74,7 +74,7 @@
     </div>
   </div>
 
-  <div class="footer-credits container" style="display: none">
+  <div class="footer-credits container">
     <img src="redciudadana.png" />
     <p>
       {% trans %}Developed by civil association Red Ciudadana®{% endtrans %}

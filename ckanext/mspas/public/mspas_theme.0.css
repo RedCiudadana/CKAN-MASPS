@@ -31,6 +31,10 @@ body {
   background: #ffffff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #0b2a4a;
+}
+
 main,
 .main {
   background: #fff;
@@ -90,6 +94,35 @@ main,
   margin: 0 auto;
 }
 
+@media all and (min-width: 768px) {
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.hero .promoted .module-content h1 {
+  color: white;
+  font-size: 5rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.hero .promoted .module-content h1
+.hero .promoted .module-content h2,
+.hero .promoted .module-content h3, 
+.hero .promoted .module-content h4,
+.hero .promoted .module-content h5,
+.hero .promoted .module-content h6
+{
+  color: white;
+}
+
+.hero .promoted .module-content p {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
 .hero-content {
   margin: 0 auto;
   width: 100%;
@@ -103,6 +136,63 @@ main,
   .hero-content {
     max-width: 768px;
   }
+}
+
+.search-form {
+  border: unset;
+}
+
+.hero-bar {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+}
+
+.hero-bar-spacer {
+  margin-bottom: 10rem;
+}
+
+.hero-bar .module-content {
+  box-shadow: rgba(0 0 0 / 16%) 0px 10px 20px, rgb(0 0 0 / 16%) 0px 6px 6px;
+  box-sizing: border-box;
+
+  background-color: white;
+  color: #494949;
+
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.hero-bar .module-content .item {
+  width: 33.333333333333%;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+
+  text-align: left;
+}
+
+.hero-bar .module-content .item .image-container {
+  margin-right: 20px;
+}
+
+.hero-bar .module-content .item .image-container img {
+  max-height: 80px;
+}
+
+.hero-bar .module-content .item .text-container h3 {
+  margin-top: 0;
+}
+
+.hero-bar .module-content .item .text-container p {
+  color: #919191;
+  font-size: 1.25rem;
 }
 
 /* hero tags */
@@ -216,6 +306,11 @@ functions section
   border-radius: 8px;
   color: #4a4949;
 }
+
+.data-categories-container--light .data-category {
+  background-color: white;
+}
+
 .data-category:hover {
   text-decoration: none;
 }
