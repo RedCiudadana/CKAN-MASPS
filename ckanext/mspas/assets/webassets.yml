@@ -1,0 +1,14 @@
+# mspas-js:
+#   filter: rjsmin
+#   output: ckanext-mspas/%(version)s-mspas.js
+#   contents:
+#     - js/mspas.js
+#   extra:
+#     preload:
+#       - base/main
+
+# mspas-css:
+#   filter: cssrewrite
+#   output: ckanext-mspas/%(version)s-mspas.css
+#   contents:
+#     - css/mspas.css
