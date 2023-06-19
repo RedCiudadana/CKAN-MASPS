@@ -453,6 +453,14 @@ functions section
   max-height: 80px;
 }
 
+.footer-credits-container {
+  background-color: #0b2a4a;
+  padding: 1.5rem 0;
+  color: white;
+
+  width: 100%;
+}
+
 .footer-credits {
   display: flex;
   align-items: center;
@@ -489,4 +497,35 @@ functions section
 
 .social-media a:hover {
   text-decoration: none;
+}
+
+.social-media-sidebar {
+  position: fixed;
+  background-color: #1486c0;
+  color: white;
+  right: 0;
+  top: 20%;
+  border-radius: 20px 0 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social-media-sidebar .social-media {
+  display: block;
+  color: white;
+}
+
+.social-media-sidebar .social-media a {
+  display: flex;
+  color: white;
+  border: unset;
+  text-align: center;
+}
+
+.social-media-sidebar .social-media a:hover {
+  color: #0b2a4a;
+}
+
+.social-media-sidebar .social-media a i {
+  margin: auto;
 }
