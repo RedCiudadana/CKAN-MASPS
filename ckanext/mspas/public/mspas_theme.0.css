@@ -175,6 +175,8 @@ main,
   flex-grow: 1;
   flex-shrink: 0;
 
+  margin-bottom: auto;
+
   text-align: left;
 }
 
